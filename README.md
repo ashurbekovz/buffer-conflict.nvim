@@ -14,6 +14,8 @@ Opens a vertical split showing neovim-native diff-mode:
   - Right pane: Latest file content from disk
   - _Tip_: Use `:diffget`/`:diffput` (`dg`/`dp` keybindings) to synchronize changes between versions.
 
+https://github.com/user-attachments/assets/f50b3a02-6dbb-4720-87b1-8f7492e7ddf6
+
 - `:BufferConflictList`
 Displays list of all buffers with newer disk versions. Select an item to automatically focus the buffer
 
