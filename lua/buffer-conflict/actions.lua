@@ -85,7 +85,11 @@ function M.buffer_conflict_list()
             if choice then
                 local buf_index = tonumber(string.match(choice, "%d+"))
                 local buf_info = modified_buffers[buf_index]
-                vim.api.nvim_set_current_buf(buf_info.buf)
+
+            vim.cmd("set eventignore=all") -- игнорируем все события
+            vim.cmd("noautocmd silent! buffer " .. buf_info.buf) -- переключаем буфер без триггеров
+            vim.cmd("set eventignore=") -- восстанавливаем настройки
+
             end
         end)
 end
