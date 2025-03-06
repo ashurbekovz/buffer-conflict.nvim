@@ -1,0 +1,1 @@
+require("buffer-conflict").setup()
