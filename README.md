@@ -1,3 +1,5 @@
+
+
 # buffer-conflict.nvim
 
 Neovim plugin for resolving conflicts between unsaved buffer changes and disk files.
@@ -45,7 +47,7 @@ This will replace the default selector with fzf-lua's interface when available.
 ```lua
 use { 'ashurbekovz/buffer-conflict.nvim' }
 ```
-### vim
+### vim-plug
 ```lua
 Plug 'ashurbekovz/buffer-conflict.nvim'
 ```
